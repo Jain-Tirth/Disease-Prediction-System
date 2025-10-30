@@ -1,0 +1,26 @@
+.symptom-form {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  color: #111;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 4px;
+  background: #f7f7f7;
+}
+.actions { margin-top: 12px; }
+.result { margin-top: 12px; padding: 8px; background:#eef9ff; border-radius:6px }
+.error { margin-top: 12px; padding: 8px; background:#ffecec; border-radius:6px }
