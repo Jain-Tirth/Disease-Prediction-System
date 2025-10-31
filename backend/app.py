@@ -10,12 +10,12 @@ app = FastAPI(title="Disease Prediction API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://disease-prediction-system-gamma.vercel.app/", "http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+    
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "model.joblib")
 LABEL_ENCODER_PATH = os.path.join(os.path.dirname(__file__), "label_encoder.joblib")
 FEATURES_PATH = os.path.join(os.path.dirname(__file__), "feature_names.json")
