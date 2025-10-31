@@ -1,4 +1,4 @@
-const BASE = process.env.REACT_APP_API_BASE || 'http://localhost:8000';
+const BASE = process.env.REACT_APP_API_BASE ;
 
 export async function getFeatures() {
   const res = await fetch(`${BASE}/features`);
