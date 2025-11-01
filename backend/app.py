@@ -10,7 +10,7 @@ app = FastAPI(title="Disease Prediction API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://disease-prediction-system-gamma.vercel.app/", "http://localhost:3000"],
+    allow_origins=["https://disease-prediction-system-fidv.onrender.com", "http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
